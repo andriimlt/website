@@ -39,7 +39,7 @@ The interpreter can be useful for running unit tests, validating WebAssembly bin
 
 [Binaryen](https://github.com/WebAssembly/binaryen) is a comprehensive set of tools with supporting infrastructure for use as the backend of compilers that are targeting WebAssembly as an output format. It has a C API and implements its own internal intermediate representation ([IR](https://en.wikipedia.org/wiki/Intermediate_representation)) of program logic and can perform a number of optimizations on the IR, support parallelization of code generation, etc.
 
-For example, binaryen is used as part of the compiler **[asm2wasm](https://github.com/WebAssembly/binaryen/blob/master/src/asm2wasm.h)** that can convert asm.js files into WebAssembly files. It's also used for supporting the [LLVM](https://llvm.org/) compiler infrastructure generation of WebAssembly and compilation from [Rust](https://www.rust-lang.org/en-US/).
+For example, binaryen is used as part of the compiler **[asm2wasm]([https://github.com/WebAssembly/binaryen/blob/master/src/asm2wasm.h](https://github.com/WebAssembly/binaryen/blob/main/src/asm_v_wasm.h))** that can convert asm.js files into WebAssembly files. It's also used for supporting the [LLVM](https://llvm.org/) compiler infrastructure generation of WebAssembly and compilation from [Rust](https://www.rust-lang.org/en-US/).
 
 Developers working on compilers, advanced optimization techniques and so forth should take advantage of binaryen and its tools that include a shell that can load and interpret WebAssembly code, assembler and disassembler, converters for asm.js and LLVM .s files into WebAssembly and so on.
 
